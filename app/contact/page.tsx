@@ -42,13 +42,16 @@ export default function Contact() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="space-y-4"
-            onSubmit={(e) => e.preventDefault()}
+            action="https://formspree.io/f/xyzwkewl"
+            method="POST"
           >
             <div>
               <label htmlFor="name" className="block text-white mb-2">Name</label>
               <input
                 type="text"
                 id="name"
+                name="name"
+                required
                 className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
@@ -57,6 +60,8 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
+                name="email"
+                required
                 className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
@@ -64,7 +69,9 @@ export default function Contact() {
               <label htmlFor="message" className="block text-white mb-2">Message</label>
               <textarea
                 id="message"
+                name="message"
                 rows={4}
+                required
                 className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
               ></textarea>
             </div>

@@ -7,27 +7,27 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A full-stack web application built with Next.js and Django",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-    github: "https://github.com",
-    demo: "https://demo.com",
-    tags: ["Next.js", "Django", "Tailwind CSS", "PostgreSQL"]
+    title: "Mayra Clothing",
+    description: "A modern e-commerce platform for premium t-shirts, built with Next.js, featuring product catalog, shopping cart, and secure checkout",
+    image: "https://i.ibb.co.com/rR01WB9k/Screenshot-2025-04-29-151637.png",
+    github: "https://github.com/Mahtab-hasan",
+    demo: "https://mayra-clothing.vercel.app",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "MongoDB"]
   },
   {
     title: "Project 2",
     description: "Real-time chat application using WebSocket",
     image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1000&auto=format&fit=crop",
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/Mahtab-hasan",
+    demo: "https://mayra-clothing.vercel.app",
     tags: ["React", "Node.js", "Socket.io", "MongoDB"]
   },
   {
     title: "Project 3",
     description: "E-commerce platform with payment integration",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/Mahtab-hasan",
+    demo: "https://mayra-clothing.vercel.app",
     tags: ["Next.js", "Stripe", "Prisma", "TypeScript"]
   }
 ];
@@ -49,15 +49,16 @@ export default function Projects() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gray-900 rounded-lg overflow-hidden"
+              className="bg-gray-900 rounded-lg overflow-hidden shadow-lg cursor-pointer group transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
-              <div className="relative h-48">
+              <div className="relative h-48 overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-90"
                 />
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
