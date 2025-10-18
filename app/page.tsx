@@ -34,7 +34,7 @@ export default function Home() {
           </div>
           <Link 
             href="/projects"
-            className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full hover:bg-gray-200 transition-colors"
+            className="inline-flex items-center gap-2 bg-[#dae9fa] text-black px-6 py-3 rounded-full hover:bg-[#c9e1fc] transition-colors"
           >
             View My Work <ArrowRight size={20} />
           </Link>

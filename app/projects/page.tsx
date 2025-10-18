@@ -8,27 +8,27 @@ import Image from "next/image";
 const projects = [
   {
     title: "Mayra Clothing",
-    description: "A modern e-commerce platform for premium t-shirts, built with Next.js, featuring product catalog, shopping cart, and secure checkout",
+    description: "Developed a modern e-commerce platform for a premium apparel brand. The site offers a fast, responsive user experience with dynamic product filtering and a persistent shopping cart, built using Next.js, TypeScript, and MongoDB.",
     image: "https://i.ibb.co.com/rR01WB9k/Screenshot-2025-04-29-151637.png",
     github: "https://github.com/Mahtab-hasan",
     demo: "https://mayra-clothing.vercel.app",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "MongoDB"]
   },
   {
-    title: "Project 2",
-    description: "Real-time chat application using WebSocket",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1000&auto=format&fit=crop",
+    title: "Vero Ecommerce",
+    description: "A full-featured e-commerce storefront built with Next.js, offering a seamless shopping experience from product discovery to checkout. Features include a dynamic product gallery, state management for the cart, and a responsive design for all devices.",
+    image: "https://i.ibb.co.com/hxhdwcxL/download.png",
     github: "https://github.com/Mahtab-hasan",
-    demo: "https://mayra-clothing.vercel.app",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"]
+    demo: "https://vero-e-commerce.vercel.app",
+    tags: ["Next.js", "CSS", "JavaScript", "TypeScript", "MongoDB"]
   },
   {
-    title: "Project 3",
-    description: "E-commerce platform with payment integration",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
+    title: "Interactive Reflexology Chart",
+    description: "A responsive and interactive web application that visualizes the foot reflexology chart. Built with Next.js and Tailwind CSS to provide a clear and educational user experience on any device.",
+    image: "https://i.ibb.co.com/xKRLVv6V/download-1.png",
     github: "https://github.com/Mahtab-hasan",
-    demo: "https://mayra-clothing.vercel.app",
-    tags: ["Next.js", "Stripe", "Prisma", "TypeScript"]
+    demo: "https://foot-reflexology-chart.vercel.app",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "React"]
   }
 ];
 

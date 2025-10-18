@@ -37,7 +37,7 @@ export const CursorEffect = () => {
 
   return (
     <motion.div
-      className="fixed pointer-events-none z-50 mix-blend-difference"
+      className="fixed pointer-events-none z-50 mix-blend-difference hidden md:block"
       animate={{
         x: mousePosition.x,
         y: mousePosition.y,
@@ -69,7 +69,8 @@ export const CursorEffect = () => {
         <motion.div
           className="w-2 h-2 rounded-full bg-white"
           animate={{
-            scale: isHovering ? 0.8 : 1,
+            // scale: isHovering ? 5 : 1,
+            scale: 3,
           }}
           transition={{
             type: "tween",

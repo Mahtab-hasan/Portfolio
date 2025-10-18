@@ -21,7 +21,7 @@ export function Navbar() {
       className="fixed w-full z-50 top-0 px-4 py-4 bg-black/80 backdrop-blur-sm"
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-white text-xl font-bold">MHA</Link>
+        <Link href="/" className="text-[#c2d8f5] text-xl font-bold">MHA</Link>
         <ul className="flex gap-8">
           {navItems.map((item) => (
             <li key={item.path}>
@@ -29,7 +29,7 @@ export function Navbar() {
                 href={item.path}
                 className={`text-sm ${
                   pathname === item.path 
-                    ? "text-white" 
+                    ? "text-[#c2d8f5]" 
                     : "text-gray-400 hover:text-white"
                 } transition-colors`}
               >

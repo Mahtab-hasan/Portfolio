@@ -77,7 +77,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full hover:bg-gray-200 transition-colors"
+              className="flex items-center gap-2 bg-[#dae9fa] text-black px-6 py-3 rounded-full hover:bg-[#c9e1fc]  transition-colors"
             >
               Send Message <Send size={20} />
             </button>
