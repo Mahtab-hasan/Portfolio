@@ -24,7 +24,7 @@ export default function About() {
             className="relative h-[400px] rounded-lg overflow-hidden order-1 md:order-2"
           >
             <Image
-              src="https://i.ibb.co.com/JjLsJ37s/mahtab.png"
+              src="/mahtab.png"
               alt="Profile"
               fill
               className="object-cover"
