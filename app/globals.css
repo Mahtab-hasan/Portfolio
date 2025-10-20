@@ -114,7 +114,7 @@
 }
 @media (max-width: 480px) {
   .gradient-title {
-    font-size: 32px;
+    font-size: 30px;
     background-position: -320px 0; /* smoother gradient animation on mobile */
   }
 }

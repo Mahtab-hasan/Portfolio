@@ -35,18 +35,17 @@ const projects = [
 ];
 
 export default function HomePage() {
-  const name = "Mahtab Hasan Arpon".split("");
 
   return (
     <main className="bg-black text-white overflow-x-hidden">
 
       {/* ===== Hero Section ===== */}
-      <section className="flex flex-col items-center justify-center md:h-[80vh] h-[90vh] px-4">
+      <section className="flex flex-col items-center justify-center md:h-[80vh] h-[90vh] px-6">
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="block md:hidden relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden "
+          className="block md:hidden relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden py-6"
         >
           <Image
             src="/mahtab.png"
@@ -56,7 +55,7 @@ export default function HomePage() {
           />
         </motion.div>
 
-        <motion.div initial="hidden" animate="visible" className="text-center flex flex-col items-center">
+        <motion.div initial="hidden" animate="visible" className="text-center flex flex-col items-center py-4">
           <h2 className="gradient-title mb-6 ">Mahtab Hasan Arpon</h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
