@@ -45,18 +45,18 @@ export default function HomePage() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="block md:hidden relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden py-6"
+          className="block md:hidden relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden "
         >
           <Image
             src="/mahtab.png"
             alt="Profile"
             fill
-            style={{ objectFit: "cover" }}
+            className="object-contain bg-black"
           />
         </motion.div>
 
         <motion.div initial="hidden" animate="visible" className="text-center flex flex-col items-center py-4">
-          <h2 className="gradient-title mb-6 ">Mahtab Hasan Arpon</h2>
+          <h2 className="gradient-title mb-6 py-5">Mahtab Hasan Arpon</h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

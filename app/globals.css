@@ -94,7 +94,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   background-position: -990px 0;
-  animation: backcolor 5s linear infinite alternate;
+  animation: backcolor 4s linear infinite alternate;
   text-align: center;
   font-weight: bolder;
 }
