@@ -40,7 +40,7 @@ export default function HomePage() {
     <main className="bg-black text-white overflow-x-hidden">
 
       {/* ===== Hero Section ===== */}
-      <section className="flex flex-col items-center justify-center md:h-[80vh] h-[90vh] px-6">
+      <section className="flex flex-col items-center justify-center md:h-[80vh] h-[100vh] px-6">
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
