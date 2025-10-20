@@ -41,7 +41,21 @@ export default function HomePage() {
     <main className="bg-black text-white overflow-x-hidden">
 
       {/* ===== Hero Section ===== */}
-      <section className="flex flex-col items-center justify-center md:h-[80vh] h-[60vh] px-4">
+      <section className="flex flex-col items-center justify-center md:h-[80vh] h-[90vh] px-4">
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="block md:hidden relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden "
+        >
+          <Image
+            src="/mahtab.png"
+            alt="Profile"
+            fill
+            style={{ objectFit: "cover" }}
+          />
+        </motion.div>
+
         <motion.div initial="hidden" animate="visible" className="text-center flex flex-col items-center">
           <h2 className="gradient-title mb-6 ">Mahtab Hasan Arpon</h2>
           <motion.p
@@ -77,7 +91,7 @@ export default function HomePage() {
       </section>
 
       {/* ===== About Section ===== */}
-      <section id="about" className="h-[100vh] px-4 max-w-6xl mx-auto">
+      <section id="about" className="min-h-screen px-4 py-10 max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           <h1 className="text-4xl font-bold text-white mb-8 text-center">About Me</h1>
           <div className="grid lg:grid-cols-2 gap-8">
@@ -85,7 +99,7 @@ export default function HomePage() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden"
+              className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden hidden md:block"
             >
               <Image
                 src="/mahtab.png"
@@ -94,6 +108,7 @@ export default function HomePage() {
                 style={{ objectFit: "cover" }}
               />
             </motion.div>
+
 
             <div className="space-y-4">
               <p className="text-gray-300">
@@ -152,7 +167,7 @@ export default function HomePage() {
                       <span key={tag} className="px-2 py-1 bg-gray-800 text-gray-300 text-sm rounded">{tag}</span>
                     ))}
                   </div>
-                  
+
                   <div className="flex justify-between items-center gap-4 py-2">
                     <Link href={project.github} className="text-white hover:text-gray-300 flex items-center gap-1"><Github size={20} />Github</Link>
                     <Link href={project.demo} className="text-white hover:text-gray-300 flex items-center gap-1"><ExternalLink size={20} />Website</Link>
